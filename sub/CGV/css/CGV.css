@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'NanumBarunGothic';
+    line-height: 1;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    width: 1440px;
+    margin: 0 auto;
+    height: 120px;
+    line-height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 a img {
+    width: 230px;
+}
+
+
+header ul li {
+    display: inline-block;
+
+}
+
+header ul li a {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #333;
+    line-height: 200px;
+}
+
+
+
+.banner {
+    background-color: #000;
+
+}
+
+.banner .inner {
+    width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 60px;
+
+}
+
+.banner ul li {
+    display: inline-block;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.banner ul li:nth-child(3) {
+    color: red;
+}
+
+.main_visual {
+    background-color: #000;
+}
+
+.main_visual .inner {
+    width: 1440px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.main_visual video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg {
+    background-color: #000;
+
+}
+
+.bg .inner {
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #000;
+
+}
+
+.bg img {
+    margin-left: 1340px;
+}
+
+
+.cont01 {
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+
+}
+
+.cont01 .top {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.cont01 .top p:nth-child(1) {
+    color: red;
+    margin-right: 10px;
+}
+
+.cont01 .top p:nth-child(2) {
+    margin-right: 10px;
+}
+
+.cont01 ul li {
+    font-size: 16px;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 160px;
+}
+
+.cont01 .main {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 160px;
+}
+
+.cont01 .main dl {
+    width: 250px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cont01 .main dl dt {
+    font-size: 20px;
+}
+
+.cont01 .main dl dd {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.cont02 {
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+
+.cont02 .top {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cont02 ul li {
+    font-size: 16px;
+    text-align: right;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.cont02 .main {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.cont02 .main .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 36px;
+    align-content: space-between;
+    /* align-content : 수직정렬 (2줄 이상) */
+
+    /* 
+    space-between : 양끝에 붙여서 정렬
+    flex-end : 끝에서 정렬
+    center : 가운데 정렬
+    space-around : 동일한 간격 (양끝여백 1/2)
+    space-evenly : 모든 여백을 동일하게 정렬
+    flex-start(기본값) : 좌측에서 정렬
+    */
+}
+
+.cont02 .main .list div img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.cont02 .main > a img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    /* 그림자 : x축 y축 흐림 색상 */
+}
+
+.between {
+    background-color: #eee;
+    color: #333;
+}
+
+.between .inner {
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 200px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.between .list {
+
+    text-align: center;
+}
+
+.between .list ul {
+    padding-top: 30px;
+
+}
+
+.between .list ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.between .bt {
+    padding: 55px 0 30px;
+    padding-left: 255px;
+}
+
+.between .bt p {
+    margin-top: 8px;
+}
+
+
