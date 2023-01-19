@@ -29,21 +29,35 @@ header .inner .right_menu li:nth-child(1) {
 /* (☞ﾟヮﾟ)☞ .main_visual ☜(ﾟヮﾟ☜) */
 
 .main_visual {
-    width: calc(100% - 200px);
+    /* width: calc(100% - 200px); */
     height: calc(100vh - 100px);
     margin: 0 auto;
 }
 
-.main_visual img {
+.main_visual .inner {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: #5c5d89;
+    color: #fff;
+    padding: 0 200px;
+}
+
+.main_visual .inner h2 {
+    padding-top: 500px;
+    font-size: 70px;
+}
+
+.main_visual .inner p {
+    font-size: 70px;
+    font-weight: 700;
 }
 
 /* (☞ﾟヮﾟ)☞ .video ☜(ﾟヮﾟ☜) */
 
 .video {
     padding: 180px 0;
+    background-color: #fdf091;
 }
 
 .video .tab_menu li {
