@@ -11,6 +11,9 @@
         integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- link swiper's css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
@@ -46,11 +49,20 @@
 
     <section class="main_visual">
         <!-- placeholder.com -->
-        <img src="https://via.placeholder.com/1920x960" alt="" />
+        <!-- <img src="https://via.placeholder.com/1920x960" alt="" /> -->
+        <!-- <video autoplay muted loop controls> 
+            <source src="img/mavisual.mp4" type="video/mp4" />
+        </video> -->
+        <div class="inner">
+            <h2>Web</h2>
+            <p>Portfolio</p>
+        </div> <!-- .inner end -->
+
+
     </section> <!-- .main_visual end -->
 
     <section class="video">
-        <div class="inner">
+        <div class="inner" data-aos="fade-up">
             <div class="title">
                 <h3>영상편집/모션그래픽</h3>
                 <p>프리미어프로, 애프터이펙트 등을 사용하여 영상편집/모션그래픽 진행</p>
@@ -202,7 +214,7 @@
     </section> <!-- .video end -->
 
     <section class="web">
-        <div class="inner">
+        <div class="inner" data-aos="fade-up">
             <div class="title">
                 <h3>웹디자인/웹퍼블리싱</h3>
                 <p>포토샵, 일러스트레이터, 비주얼스튜디오코드를 이용하여 웹사이트 구현</p>
@@ -211,7 +223,10 @@
             <div class="list">
                 <div class="item">
                     <figure>
-                        <img src="img/CGV02.png"" alt="" />
+                        <a href="img/CGV02.png" data-fancybox="images2">
+                            <img src="img/CGV02.png" alt="" />
+                        </a>
+
                     </figure>
                     <div class=" info">
                         <h4>CGV</h4>
@@ -227,43 +242,45 @@
                         </dl>
                         <ul class="btn">
                             <li><a href="sub/CGV/index.html" target="_blank">제작사이트보기</a></li>
-                            <li><a href="#">기획서보기</a></li>
+                            <li><a href="sub/CGV/process.html" target="_blank">기획서보기</a></li>
                         </ul> <!-- .btn end -->
-                </div> <!-- .info end -->
-            </div> <!-- .item end / 1 -->
-            <div class="item">
-                <figure>
-                    <img src="img/busanmlik.png" alt="" />
+                    </div> <!-- .info end -->
+                </div> <!-- .item end / 1 -->
+                <div class="item">
+                    <figure>
+                        <a href="img/busanmlik.png" data-fancybox="images2">
+                            <img src="img/busanmlik.png" alt="" />
+                        </a>
                     </figure>
                     <div class=" info">
-                    <h4>부산우유</h4>
-                    <p>웹사이트 리뉴얼을 진행하였으며, 기획, 디자인, html, css언어를
-                        사용하여 구현하였습니다</p>
-                    <dl>
-                        <dt>프로그램</dt>
-                        <dd>포토샵, 비주얼스튜디오코드</dd>
-                    </dl>
-                    <dl>
-                        <dt>사용언어</dt>
-                        <dd>html, css</dd>
-                    </dl>
-                    <ul class="btn">
-                        <li><a href="sub/busanmlik/index.html" target="_blank">제작사이트보기</a></li>
+                        <h4>부산우유</h4>
+                        <p>웹사이트 리뉴얼을 진행하였으며, 기획, 디자인, html, css언어를
+                            사용하여 구현하였습니다</p>
+                        <dl>
+                            <dt>프로그램</dt>
+                            <dd>포토샵, 비주얼스튜디오코드</dd>
+                        </dl>
+                        <dl>
+                            <dt>사용언어</dt>
+                            <dd>html, css</dd>
+                        </dl>
+                        <ul class="btn">
+                            <li><a href="sub/busanmlik/index.html" target="_blank">제작사이트보기</a></li>
                             <li><a href=" #">기획서보기</a></li>
-                    </ul> <!-- .btn end -->
-            </div> <!-- .info end -->
-        </div> <!-- .item end / 2 -->
-        </div> <!-- .list end -->
+                        </ul> <!-- .btn end -->
+                    </div> <!-- .info end -->
+                </div> <!-- .item end / 2 -->
+            </div> <!-- .list end -->
         </div> <!-- .inner end -->
     </section> <!-- .web end -->
 
     <section class="graphic">
-        <div class="inner">
-            <div class="title">
+        <div class="inner" data-aos="fade-up">
+            <div class="title" >
                 <h3>그래픽디자인</h3>
                 <p>2D, 3D그래픽을 포토샵, 일러스트레이터를 이용하여 디자인을 제작하였습니다</p>
             </div> <!-- .title end -->
-            <div class="list">
+            <div class="list" >
 
                 <div class="item">
                     <!-- fanceybox3 -->
@@ -286,7 +303,7 @@
                         </div> <!-- .info end -->
                     </a>
                 </div> <!-- .item end -->
-
+            
                 <div class="item">
                     <!-- fanceybox3 -->
                     <a href="img/detailpage.jpg" data-fancybox="images">
@@ -359,12 +376,12 @@
 
 
     <section class="profile">
-        <div class="inner">
+        <div class="inner" data-aos="fade-up">
             <div class="title">
                 <h3>나의소개</h3>
                 <p>경력, 이력, 스킬을 공유합니다.</p>
             </div> <!-- .title end -->
-            
+
             <div class="list">
                 <figure>
                     <img src="https://via.placeholder.com/400" alt="" />
@@ -380,13 +397,13 @@
                     </ul>
                     <ul>
                         <li><strong>경력, 자격증</strong></li>
-                        <li>어디서 무엇을 하였는가><br/>
-                        자격증은 무엇이 있는가?<br/></li>
+                        <li>어디서 무엇을 하였는가><br />
+                            자격증은 무엇이 있는가?<br /></li>
                     </ul>
                     <ul>
                         <li><strong>교육</strong></li>
-                        <li>[멀티미디어콘텐츠제작]영상편집&콘텐츠제작<br/>
-                        (프리미어, 에펙, 시네마4D)</li>
+                        <li>[멀티미디어콘텐츠제작]영상편집&콘텐츠제작<br />
+                            (프리미어, 에펙, 시네마4D)</li>
                     </ul>
                     <ul class="skill">
                         <li>#영상편집</li>
@@ -415,14 +432,18 @@
             <li><a href="#">유튜브채널</a></li>
             <li><a href="#" download>지원서 다운로드</a></li>
         </ul>
-        <p>COPYRIGHT 2023, 디자이나 정원준. ALL RIGHTS RESERVED.</p>
-        <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br/>
-        사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힘니다.</p>
+        <p>COPYRIGHT 2023, 디자이너 정원준. ALL RIGHTS RESERVED.</p>
+        <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br />
+            사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힘니다.</p>
     </footer>
 
 
+    
 
 
+
+
+    
 
 
 
@@ -435,6 +456,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
